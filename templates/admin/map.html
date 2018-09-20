@@ -1,0 +1,20 @@
+{% extends "admin/layout.html" %}
+{% block title %}路书{% endblock %}
+{% block head %}
+{{ super() }}
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=NsB7vlVCKGfGPMLbqXwi3NQAHxeEoe7W"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/library/LuShu/1.2/src/LuShu_min.js"></script>
+{% endblock %}
+{% block content %}
+    <div id="map_canvas"></div>
+    <div id="action-box">
+        <button id="run">开始</button>
+        <button id="stop">停止</button>
+        <button id="pause">暂停</button>
+        <button id="hide">隐藏信息窗口</button>
+        <button id="show">展示信息窗口</button>
+        <script src="{{ url_for('static', filename='js/location.js') }}"></script>
+    </div>
+{% endblock %}

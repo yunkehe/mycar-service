@@ -1,0 +1,22 @@
+{% extends "admin/layout.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+    <form action="" method="POST">
+        <div>
+            <label for="">
+                <input type="text" name="username" placeholder="请输入用户名" />
+            </label>
+        </div>
+        <div>
+            <label for="">
+                <input type="text" name="password" placeholder="请输入密码" />
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="登录" />
+        </div>
+    </form>
+{% endblock %}
