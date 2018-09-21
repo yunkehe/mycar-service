@@ -10,11 +10,12 @@
 {% block content %}
     <div id="map_canvas"></div>
     <div id="action-box">
-        <button id="run">开始</button>
-        <button id="stop">停止</button>
+        <button id="run">每秒获取一次定位数据</button>
+        <button id="stop">停止获取数据</button>
+        <!-- <button id="stop">停止</button>
         <button id="pause">暂停</button>
         <button id="hide">隐藏信息窗口</button>
-        <button id="show">展示信息窗口</button>
-        <script src="{{ url_for('static', filename='js/location.js') }}"></script>
+        <button id="show">展示信息窗口</button> -->
     </div>
+    <script src="{{ url_for('static', filename='js/location.js') }}"></script>
 {% endblock %}
