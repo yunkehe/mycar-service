@@ -1,4 +1,4 @@
-# 
+# -*- coding: utf-8 -*-
 from flask import Flask, request, url_for, render_template
 import model.mysql as mysql
 import json

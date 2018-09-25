@@ -1,4 +1,4 @@
-# 
+# -*- coding: utf-8 -*-
 from controller.route import app
 
 if __name__ == '__main__':
