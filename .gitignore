@@ -1,3 +1,4 @@
 model/testdb.py
 model/config.py
 *.pyc
+*/__pycache__
